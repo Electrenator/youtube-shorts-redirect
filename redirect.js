@@ -15,3 +15,7 @@ redirect();
 // Otherwise, people have to refresh the page for it to work.
 // Some other events that might work? yt-page-data-updated, yt-page-type-changed, yt-navigate-finish
 document.addEventListener("yt-navigate-start", redirect);
+
+// Navigation on mobile web youtube is different. This is the only reliable
+// detection I've found. And it does not seem to trigger on Desktop.
+document.addEventListener("resize", redirect, {capture: true, passive: true});
