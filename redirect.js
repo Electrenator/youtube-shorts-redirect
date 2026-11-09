@@ -3,7 +3,7 @@ function redirect() {
         // 0     1       2 
         //   /shorts/abcde123456
         const videoId = location.pathname.split("/")[2];
-        const newUrl = "https://www.youtube.com/watch?v=" + videoId;
+        const newUrl = "https://" + location.host + "/watch?v=" + videoId;
         window.location.replace(newUrl);
     }
 }
