@@ -13,9 +13,17 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
       "js": ["redirect.js"]
     }
+  ],
+
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://m.youtube.com/*"
   ],
 
   "browser_specific_settings": {
