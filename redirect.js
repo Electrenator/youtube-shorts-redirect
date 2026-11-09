@@ -17,5 +17,6 @@ redirect();
 document.addEventListener("yt-navigate-start", redirect);
 
 // Navigation on mobile web youtube is different. This is the only reliable
-// detection I've found. And it does not seem to trigger on Desktop.
+// detection I've found. Does not seem to trigger often on Desktop but sometimes
+// does after a redirect or when hovering over a thumbnail with playing preview.
 document.addEventListener("resize", redirect, {capture: true, passive: true});

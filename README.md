@@ -6,3 +6,4 @@ Simple Firefox add-on which redirects YouTube Shorts URLs (`youtube.com/shorts/i
 ## Features
   - No more awful Shorts player!
   - Works when clicking on Shorts link directly from the YouTube site.
+  - Supports both the Desktop and Mobile versions of Firefox.

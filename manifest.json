@@ -17,7 +17,8 @@
         "*://www.youtube.com/*",
         "*://m.youtube.com/*"
       ],
-      "js": ["redirect.js"]
+      "js": ["redirect.js"],
+      "run_at": "document_start"
     }
   ],
 
